@@ -1,22 +1,22 @@
-int A_0 = 2;
-int A_1 = 3;
-int A_2 = 12;
-int A_3 = 13;
+int A_0 = 8;
+int A_1 = 9;
+int A_2 = 10;
+int A_3 = 11;
 
 int B_0 = 4;           
 int B_1 = 5;
 int B_2 = 6;
 int B_3 = 7;
 
-int C_0 = 8;
-int C_1 = 9;
-int C_2 = 10;
-int C_3 = 11;
+int C_0 = 2;
+int C_1 = 3;
+int C_2 = 12;
+int C_3 = A5;
 
-int D_0 = 14;
-int D_1 = 15;
-int D_2 = 16;
-int D_3 = 17;
+int D_0 = A0;
+int D_1 = A1;
+int D_2 = A2;
+int D_3 = A3;
 
 int valorA = 0;
 int valorB = 0;
@@ -24,13 +24,9 @@ int valorC = 0;
 int valorD = 0;
 
 
-
-
-
 void setup() {
   // put your setup code here, to run once:
     Serial.begin(9600);
-  
   pinMode(A_0, INPUT_PULLUP);
   pinMode(A_1, INPUT_PULLUP);
   pinMode(A_2, INPUT_PULLUP);
@@ -117,10 +113,11 @@ switch(valorC)
       case 14:
         valorD = ~valorA;
       break;
-    }   
+    }  
   digitalWrite(D_0, valorD & 1);
   digitalWrite(D_1, valorD & 2);
   digitalWrite(D_2, valorD & 4);
   digitalWrite(D_3, valorD & 8);
 
 }
+
