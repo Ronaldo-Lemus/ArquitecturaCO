@@ -79,24 +79,52 @@ switch(valorC)
     {
       case 0:
     valorD = valorA;
+  Serial.print(" ");
+  Serial.print(" ValorD [D=A]:  ");
+  Serial.println(valorD);
+  Serial.print(" ");
       break;
       case 1:
         valorD = valorA + 1;
+  Serial.print(" ");
+  Serial.print(" ValorD [D=A+1]:  ");
+  Serial.println(valorD);
+  Serial.print(" ");
       break;
       case 2:
         valorD = valorA + valorB;
+  Serial.print(" ");
+  Serial.print(" ValorD [D=A+B]:  ");
+  Serial.println(valorD);
+  Serial.print(" ");
       break;
       case 3:
         valorD = valorA + valorB + 1;
+  Serial.print(" ");
+  Serial.print(" ValorD [D=A+B+1]:  ");
+  Serial.println(valorD);
+  Serial.print(" ");
       break;
       case 4:
         valorD = valorA - valorB - 1;
+  Serial.print(" ");
+  Serial.print(" ValorD [D=A-B-1]:  ");
+  Serial.println(valorD);
+  Serial.print(" ");
       break;
       case 5:
         valorD = valorA - valorB;
+  Serial.print(" ");
+  Serial.print(" ValorD [D=A-B]:  ");
+  Serial.println(valorD);
+  Serial.print(" ");
       break;
       case 6:
         valorD = valorA - 1;
+  Serial.print(" ");
+  Serial.print(" ValorD [D=A-1]:  ");
+  Serial.println(valorD);
+  Serial.print(" ");
       break;
       case 7:
         valorD = valorA;
@@ -120,3 +148,4 @@ switch(valorC)
   digitalWrite(D_3, valorD & 8);
 
 }
+
